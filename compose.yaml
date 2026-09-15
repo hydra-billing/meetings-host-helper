@@ -1,0 +1,8 @@
+services:
+  create-battle:
+    build: .
+    image: meetings-host-helper
+    environment:
+      TZ: ${TZ:-Europe/Moscow}
+    volumes:
+      - ./config.yml:/app/config.yml:ro

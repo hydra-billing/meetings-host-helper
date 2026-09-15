@@ -1,4 +1,26 @@
 # Usage
+Create `config.yml` from `config.yml.sample` and fill in the Jira and Poker
+credentials, URLs, and issue filter.
+
+## Docker Compose
+
+Build and run from the project directory (Ruby 4.0.6 and gems are installed
+inside the image):
+
+```sh
+docker compose run --build --rm create-battle
+```
+
+For subsequent runs:
+
+```sh
+docker compose run --rm create-battle
+```
+
+## Local Ruby
+
+Use Ruby 4.0.6
+
 Install bundler and get required gems
 ```
   gem install bundler && bundle

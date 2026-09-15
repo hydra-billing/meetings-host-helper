@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-ruby '3.1.2'
+ruby '4.0.6'
 
+gem 'bigdecimal'
+gem 'logger'
 gem 'rest-client'
 gem 'dry-struct'

@@ -1,0 +1,9 @@
+.git
+.bundle
+vendor
+config.yml
+config.yml.*
+.env
+.env.*
+*.log
+.DS_Store

@@ -7,7 +7,7 @@ module Gateways
     def initialize(config)
       @username = config.username
       @password = config.password
-      @host = config.host
+      @host = config.host.chomp('/')
       @filter = config.issues_search_filter
     end
 

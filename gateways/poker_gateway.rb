@@ -8,7 +8,7 @@ module Gateways
     def initialize(config)
       @username = config.username
       @password = config.password
-      @host = config.host
+      @host = config.host.chomp('/')
     end
 
     def create_battle_with_plans(plans)
